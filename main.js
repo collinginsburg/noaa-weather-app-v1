@@ -20,7 +20,7 @@ if ('geolocation' in navigator){
                         return response.json();
                     }).then(function (obj){
                         console.log(obj); //console.log object with all current weather condition for stations!
-                        let currentTemperature = +(1.8*(obj.properties.temperature.value)+32).toFixed(2);
+                        let currentTemperature = +(1.8*(obj.properties.temperature.value)+32).toFixed(0);
                         document.querySelector('.temperature').innerHTML = `${currentTemperature}&deg`;
                     })
                 })
