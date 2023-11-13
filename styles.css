@@ -1,0 +1,13 @@
+body{
+    background-color: black;
+}
+
+.temperature{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60vw;
+    font-family: sans-serif, monospace;
+    color: white;
+}
