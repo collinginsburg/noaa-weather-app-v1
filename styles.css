@@ -11,3 +11,13 @@ body{
     font-family: sans-serif, monospace;
     color: white;
 }
+
+@media (min-width: 800px) {
+    .temperature{ overflow-y: hidden;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .temperature{ overflow-x: hidden;
+    }
+  }
