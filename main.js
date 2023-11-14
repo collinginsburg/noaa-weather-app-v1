@@ -21,10 +21,10 @@ if ('geolocation' in navigator){
                     }).then(function (obj){
                         console.log(obj); //console.log object with all current weather condition for stations!
                         let currentTemperature = obj.properties.temperature.value;
-
+                        console.log(`the current temp at ${stationID} is ${currentTemperature}`);
                         // fallback if station is showing null values
                         if (currentTemperature === null){ 
-                            console.log(`the current temp is at ${stationID} is ${currentTemperature}`);
+                            console.log(`the current temp at ${stationID} is ${currentTemperature}`);
                             fetch(`${urlObservationStations}`).then(function (response){ // fetch list of staions URL, create json object
                                 return response.json();
                             }).then(function (obj){
